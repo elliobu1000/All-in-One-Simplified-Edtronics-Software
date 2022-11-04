@@ -1,0 +1,18 @@
+# creating and activating the env
+virtualenv -p python3 venv
+cd venv/Scripts
+activate
+cd .. && cd ..
+
+# install the packages
+pip install -r requirements.txt
+pip install openapi-spec-validator
+
+
+# run the application in dev
+./run_app_dev.sh
+
+# test
+curl localhost:5000/api/v1/path_for_blueprint_x/test
+# or
+pytest 

@@ -1,0 +1,72 @@
+.main-header{
+    /* height: 106px; */
+    background-color: #BDBDBD;
+}
+.header-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.aos-image-logo{
+    width: 134px;
+    height: 121px;
+}
+.text-logo{
+    position: relative;
+    width: 178px;
+    height: 100%;    
+}
+
+.text-logo-content{
+    position: absolute;
+    height: 100%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 47px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* The language part  */
+.language-icon{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.language-icon-img{
+    width: 40px;
+    height: 42px;
+    transform: rotate(-180deg);
+}       
+
+.language{
+    display: flex;
+    flex-direction: row;
+}
+.language-text{
+    width: 51px;
+}
+
+.language-text-content{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 26px;
+    
+    /* identical to box height, or 115% */
+    text-align: center;
+    
+    color: #000000;
+}

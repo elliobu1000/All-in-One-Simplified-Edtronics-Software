@@ -1,0 +1,40 @@
+.browse{
+    padding: 20px;
+}
+.mode-element{
+    width: 32%;
+    padding: 2px;
+}
+.mode-element-content:hover{
+    background-color: #F0F0F0;
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+    border: none;
+    /* border-radius: 10px; */
+}
+
+.mode-element-content{
+    display: flex;
+    flex-direction: row;
+}
+.mode-title{
+    font-family: AOS;
+}
+.mode-details{
+    padding: 8px;
+}
+.mode-description{
+    font-family: 'AOS mini';
+    font-size: 14px;
+    color: darkgrey;
+}
+.mode-icon{
+    width:50px;
+}
+
+.browse-content{
+    height: 190px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}

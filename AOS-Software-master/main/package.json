@@ -1,0 +1,24 @@
+{
+  "name": "AOS",
+  "version": "1.0.0",
+  "description": "Get into Robotics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build-linux64": "electron-packager . AOS --platform linux --arch x64 --out out/ --overwrite",
+    "build-armhf": "electron-installer-debian --src out/AOS-linux-x64/ --dest out/installers/ --arch armhf",
+    "build-arm64": "electron-installer-debian --src out/AOS-linux-x64/ --dest out/installers/ --arch arm64",
+    "build": "electron-builder build --linux AppImage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^20.0.2",
+    "electron-builder": "^23.6.0",
+    "electron-installer-debian": "^3.1.0"
+  },
+  "dependencies": {
+    "electron-packager": "^16.0.0"
+  }
+}
